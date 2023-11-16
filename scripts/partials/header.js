@@ -8,6 +8,9 @@ const headerHTML = `
   </div>
   <div class="row">
     <div class="col">
+      <form action="index.html"><button class="btn btn-primary btn-block">Main Menu</button></form>
+    </div>
+    <div class="col">
       <form action="biography.html"><button class="btn btn-primary btn-block">Biography</button></form>
     </div>
     <div class="col">
@@ -26,7 +29,7 @@ const headerHTML = `
 `;
 
 const footerHTML = `
-  <hr>All &copy; rights reserved to Alper KUM, 2023
+  <hr><p class="footerText">All &copy; rights reserved to Alper KUM, 2023</p>
 `;
 
 

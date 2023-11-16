@@ -44,7 +44,8 @@ hr{
 }
 
 .hello-world{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 26px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: red;
     animation: rainbow 7s linear infinite;
 }
@@ -71,9 +72,57 @@ hr{
     border-radius: 5px;
 }
 
+.table-head th{
+    background-color: rgb(40,80,144);
+    border: 1px solid rgb(32,72,136);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table-body td{
+    background-color: rgb(120,180,224);
+    border: 1px solid rgb(112,172,216);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.table-biography{
+    border: 2px solid rgb(40,80,144);
+    border-radius: 5px;
+}
+.table-biography td{
+    color: white;
+    border: 2px solid rgb(40,80,144);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td-bio{
+    background-color: rgb(120,180,240);
+}
+
+a.a-table:hover,td.a-td:hover{
+    background-color: rgb(120,180,240);
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+}
+a.a-table:active,td.a-td:active{
+    background-color: rgb(192,224,255);
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+}
+
 /* IDs */
 
-#footer-container{
+#footerText{
     padding-left: 10px;
 }
 
