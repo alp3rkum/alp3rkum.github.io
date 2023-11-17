@@ -37,6 +37,12 @@ hr{
     margin-top: 0px;
 }
 
+pre{
+    background-color: rgb(12,24,96);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 /* Classes */
 
 .header{
@@ -44,7 +50,7 @@ hr{
 }
 
 .hello-world{
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: red;
     animation: rainbow 7s linear infinite;
@@ -90,7 +96,7 @@ hr{
 }
 
 .table-biography{
-    border: 2px solid rgb(40,80,144);
+    /* border: 2px solid rgb(40,80,144); */
     border-radius: 5px;
 }
 .table-biography td{
@@ -103,8 +109,9 @@ hr{
     vertical-align: middle;
 }
 
-.td-bio{
+.table-biography td.td-bio{
     background-color: rgb(120,180,240);
+    border: 2px solid rgb(112,172,224);
 }
 
 a.a-table:hover,td.a-td:hover{
