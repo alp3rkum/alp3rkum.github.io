@@ -8,19 +8,19 @@ const headerHTML = `
   </div>
   <div class="row">
     <div class="col">
-      <form action="/index.html"><button class="btn btn-primary btn-block">Main Menu</button></form>
+      <form action="https://alp3rkum.github.io/index.html"><button class="btn btn-primary btn-block">Main Menu</button></form>
     </div>
     <div class="col">
-      <form action="/biography.html"><button class="btn btn-primary btn-block">Biography</button></form>
+      <form action="https://alp3rkum.github.io/biography.html"><button class="btn btn-primary btn-block">Biography</button></form>
     </div>
     <div class="col">
-      <form action="/skills.html"><button class="btn btn-primary btn-block">Skills</button></form>
+      <form action="https://alp3rkum.github.io/skills.html"><button class="btn btn-primary btn-block">Skills</button></form>
     </div>
     <div class="col">
-      <form action="/reps.html"><button class="btn btn-primary btn-block">Repositories</button></form>
+      <form action="https://alp3rkum.github.io/reps.html"><button class="btn btn-primary btn-block">Repositories</button></form>
     </div>
     <div class="col">
-      <form action="/howto.html"><button class="btn btn-primary btn-block">How-To's</button></form>
+      <form action="https://alp3rkum.github.io/howto.html"><button class="btn btn-primary btn-block">How-To's</button></form>
     </div>
   </div>
   <br>
