@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/partials/header.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/page.css" defer>
+    <title>My HTML5 Tutorials</title>
+</head>
+<body>
+    <header id="header-container">
+        
+    </header>
+    <div class="text-center"><h3>Tutorials</h3></div>
+    <br>
+    <p>This page has all of my useful HTML5 tips and tricks.</p>
+    <hr>
+    <div class="container-fluid content">
+        <div class="text-center"><h4>HTML Partials</h4></div>
+        <p>Partial webpages have been a great way to organize your Web project. Many languages and frameworks, such as PHP and ReactJS, offer the ability to make partial webpages. In fact, these two languages are my favorites in Web because of that ability.</p>
+        <p>But what to do when you can't use any language or framework that offers built-in support for partial webpages? Like when you have to develop a static website using only HTML, CSS and JavaScript? You know, just like this website😁</p>
+        <p>HTML5 used to have a thing called "import" but it has been deprecated, making it harder to make partials... Unless you also know some JavaScript, which is the workaround we will use in this tutorial. Now without further ado, let's learn how to make partials in pure HTML5 & JavaScript.</p>
+        <div class="text-center"><h5>HTML Code</h5></div>
+        <p>First, we need to write a basic HTML code to house our partials.</p>
+        <div class="text-center"><h6>Main Code</h6></div>
+        <div class="container code">
+            <pre>
+&lt;html&gt;
+    &lt;head&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="partial-container"&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+        <p>This code is a basic HTML code that will house our partial, inside a div element that has the "partial-container" ID. This is not a reserved name, and you can name this div anything that you want. Save this code as "index.html".</p>
+        <p>Now let's create a new JavaScript file. I'll name it "partial.js" for the tutorial. Insert this code in it.</p>
+        <pre>
+// partial.js
+const partialHTML = `&lt;div class="partial"&gt;&lt;h1&gt;Hello World!&lt;/h1&gt;&lt;/div&gt;`;
+window.onload = function() {
+    var partial = document.getElementById("partial-container");
+    partial.innerHTML = partialHTML;
+}
+        </pre>
+        <p>This code will hold a stringified HTML code in a "partialHTML" constant. Upon the launch of the webpage (window.onload), a function will be triggered that will do the following:</p>
+        <p>1. Get the div element with the ID "partial-container".</p>
+        <p>2. Set the innerHTML of the div to the "partialHTML" constant.</p>
+        <p>Save this code.</p>
+        <p>Now go back to your index html, and add this script inside the head tags:</p>
+        <pre>
+&lt;script src="partial.js" &gt;&lt;/script&gt;
+        </pre>
+        Save the "index.html" and open it. You will see this (open in new tab to see in full resolution):
+        <br>
+        <div class="text-center"><img src="../partialdemo.png" width="320" height="320"></div>
+    </div>
+    <p>Now while this technique might be harder to code than it needs to be, it is a great way to organize your Web project using only HTML, CSS and JavaScript. You can make rather basic header and footer partials this way, which still supports full on CSS styling and DOM manipulation, because the string is written into the page's respective element(s) as HTML code.</p>
+    <p>With few modifications, you can pretty much establish a primitive routing mechanism using this technique. Can be useful for basic static websites.</p>
+    <footer id="footer-container">
+    </footer>
+</body>
+</html>
