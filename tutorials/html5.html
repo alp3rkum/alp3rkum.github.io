@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../scripts/partials/header.js"></script>
+    <script defer src="../scripts/autodark.js"></script>
+    <script defer src="../scripts/index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/page.css" defer>
+    <link rel="stylesheet" href="../styles/dark.css">
     <title>My HTML5 Tutorials</title>
 </head>
 <body>
     <header id="header-container">
         
     </header>
-    <div class="text-center"><h3>Tutorials</h3></div>
+    <div class="text-center"><img src="../graphics/html5.svg" width="100" height="100"><h3>Tutorials</h3></div>
     <br>
     <p>This page has all of my useful HTML5 tips and tricks.</p>
     <hr>
-    <div class="container-fluid content">
+    <div class="container-fluid content" id="partials">
         <div class="text-center"><h4>HTML Partials</h4></div>
         <p>Partial webpages have been a great way to organize your Web project. Many languages and frameworks, such as PHP and ReactJS, offer the ability to make partial webpages. In fact, these two languages are my favorites in Web because of that ability.</p>
         <p>But what to do when you can't use any language or framework that offers built-in support for partial webpages? Like when you have to develop a static website using only HTML, CSS and JavaScript? You know, just like this website😁</p>
@@ -62,6 +65,22 @@ window.onload = function() {
     </div>
     <p>Now while this technique might be harder to code than it needs to be, it is a great way to organize your Web project using only HTML, CSS and JavaScript. You can make rather basic header and footer partials this way, which still supports full on CSS styling and DOM manipulation, because the string is written into the page's respective element(s) as HTML code.</p>
     <p>With few modifications, you can pretty much establish a primitive routing mechanism using this technique. Can be useful for basic static websites.</p>
+    <hr>
+    <div class="container-fluid content" id="defer">
+        <div class="text-center"><h4>Script Defer</h4></div>
+        <p>JavaScript is a great way to make your website more interactive and have multiple behaviors to perform. Sometimes, it even helps your styling elements to work properly (eg. Bootstrap Dropdown).</p>
+        <p>In HTML5, we can include JavaScript files in our webpage with this one line of code inside head tags:</p>
+        <pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+        </pre>
+        <p>This line will make the script file to be loaded as soon as the page is loaded. The page will start executing the commands that script.js file contains, like showing an alert, changing the background color, etc.</p>
+        <p>But sometimes, this way of loading a script file into the webpage is not feasible, and lack of elements on the webpage will affect how the page looks and performs, as script fails to fully execute. A well-known work around is to write this code at the bottom of body.../body block. This will allow the page to load first, then to execute necessary scripts, and as all elements that are supposed to be in the page are there, the execution of the script file will not yield any problem.</p>
+        <p>However, there's a third way that combines both two ways, and it's done with adding only one keyword to the code line when we write it inside the head block:</p>
+        <pre>
+&lt;script <b>defer</b> src="script.js"&gt;&lt;/script&gt;
+        </pre>
+        <p>This line will tell the browser to execute the script file only when the page is fully loaded. This will allow the complete execution that bottom-of-the-body approach gives, and the ease of writing the inside head approach grants. This will only work in external script loading like this, as internal/inline script is already fully written inside the page.</p>
+    </div>
     <footer id="footer-container">
     </footer>
 </body>
