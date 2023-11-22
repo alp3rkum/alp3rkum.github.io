@@ -29,8 +29,13 @@ a:active{
     color: rgb(255,255,255);
 }
 
+tr{
+    transition-duration: 0.25s;
+}
+
 td{
     background-color: rgb(48,96,168);
+    transition-duration: 0.25s;
 }
 
 hr{
@@ -41,13 +46,10 @@ pre{
     background-color: rgb(12,24,96);
     padding-top: 5px;
     padding-left: 5px;
+    transition-duration: 0.25s;
 }
 
 /* Classes */
-
-.header{
-    background-color: rgb(66,132,210);
-}
 
 .hello-world{
     font-size: 32px;
@@ -74,8 +76,36 @@ pre{
 }
 
 .btn{
+    background-color: rgb(48,96,192);
     width: 100%;
     border-radius: 5px;
+    transition-duration: 0.25s;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(72,128,224);
+}
+
+.btn:active{
+    background-color: rgb(96,160,255) !important;
+}
+
+.btn:hover{
+    background-color: rgb(72,128,224);
+}
+
+.btn:active{
+    background-color: rgb(96,160,255) !important;
+}
+
+.btn-table{
+    background-color: rgb(120,180,224);
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+    transition-duration: 0.25s;
+    color: white;
 }
 
 .table-head th{
@@ -83,6 +113,8 @@ pre{
     border: 1px solid rgb(32,72,136);
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
+    transition-duration: 0.25s;
 }
 
 .table-body td{
@@ -93,11 +125,13 @@ pre{
     padding-top: 5px;
     padding-bottom: 5px;
     color: white;
+    transition-duration: 0.25s;
 }
 
 .table-biography{
     /* border: 2px solid rgb(40,80,144); */
     border-radius: 5px;
+    transition-duration: 0.25s;
 }
 .table-biography td{
     color: white;
@@ -107,11 +141,29 @@ pre{
     padding-top: 5px;
     text-align: center;
     vertical-align: middle;
+    transition-duration: 0.25s;
 }
 
 .table-biography td.td-bio{
     background-color: rgb(120,180,240);
     border: 2px solid rgb(112,172,224);
+    transition-duration: 0.25s;
+}
+
+.a-td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    /* text-align: center;
+    align-content: center;
+    vertical-align: middle; */
+    transition-duration: 0.25s;
+}
+
+.a-table{
+    transition-duration: 0.25s;
 }
 
 a.a-table:hover,td.a-td:hover{
@@ -128,6 +180,11 @@ a.a-table:active,td.a-td:active{
 }
 
 /* IDs */
+
+#header-container{
+    background-color: rgb(66,132,210);
+    transition-duration: 0.25s;
+}
 
 #footerText{
     padding-left: 10px;
