@@ -15,7 +15,7 @@
 }
 
 .btn.dark-button{
-    background-color: #333;
+    background-color: #222;
     width: 100%;
     border-radius: 5px;
     transition-duration: 0.25s;
@@ -23,7 +23,7 @@
 }
 
 .btn.dark-button:hover{
-    background-color: #999;
+    background-color: #888;
 }
 
 .btn.dark-button:active{
@@ -38,7 +38,7 @@ td.dark-table{
     background-color: #444;
     border-color: #666;
 }
-.table-head th{
+.table-head th.dark-table{
     background-color: #777;
     border-color: #999;
 }

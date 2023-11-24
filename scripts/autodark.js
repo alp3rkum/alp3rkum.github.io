@@ -3,7 +3,7 @@ const html = document.querySelector("html");
 function isNightTime() {
     var now = new Date();
     var hour = now.getHours();
-    return hour >= 20 || hour < 8;
+    return hour >= 17 || hour < 8;
 }
 
 function toggleDarkMode(){
@@ -18,7 +18,7 @@ function toggleDarkMode(){
         document.getElementById("header-container").style.backgroundColor = "#222"; // -> does work :)
         //document.getElementById("header-container").classList.add("dark-mode-header"); -> doesn't work :(
             for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.add("dark-table");
+                buttons[i].classList.add("dark-button");
               }
               for (let i = 0; i < table_a.length; i++) {
                 table_a[i].classList.add("dark-table");
