@@ -3,7 +3,7 @@ const html = document.querySelector("html");
 function isNightTime() {
     var now = new Date();
     var hour = now.getHours();
-    return hour >= 17 || hour < 8;
+    return hour >= 20 || hour < 8;
 }
 
 function toggleDarkMode(){
